@@ -10,7 +10,7 @@ namespace DeviceXMLParser
             using (StreamWriter file = new StreamWriter(@"E:\Downloads\CHKDeviceFiles\facs.csv"))
             {
                 var directories = Directory.GetDirectories(@"E:\Downloads\CHKDeviceFiles\DeviceFiles");
-                foreach (var xmlFile in Directory.GetFiles(@"E:\Downloads\CHKDeviceFiles\DeviceFiles", "*.xml", SearchOption.AllDirectories))
+                foreach (var xmlFile in Directory.GetFiles(@"E:\Downloads\CHKDeviceFiles\DeviceFiles", "*.txt", SearchOption.AllDirectories))
                 {
                     try
                     {
